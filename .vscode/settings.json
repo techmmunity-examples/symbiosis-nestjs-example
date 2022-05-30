@@ -32,5 +32,11 @@
 	"files.associations": {
 		".lintstagedrc": "json"
 	},
-	"cSpell.words": ["fastify", "nestjs", "techmmunity", "upsert"]
+	"cSpell.words": [
+		"fastify",
+		"nestjs",
+		"techmmunity",
+		"thothom",
+		"upsert"
+	]
 }
