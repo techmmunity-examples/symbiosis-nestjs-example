@@ -1,9 +1,9 @@
 /* eslint-disable sonarjs/no-duplicate-string */
 
 import { Injectable } from "@nestjs/common";
-import { InjectRepository } from "@techmmunity/symbiosis-nestjs";
-import { Repository } from "@techmmunity/symbiosis-mongodb";
-import { Append } from "@techmmunity/symbiosis";
+import { InjectRepository } from "@thothom/nestjs";
+import { Repository } from "@thothom/mongodb";
+import { Append } from "@thothom/core";
 import { ExampleEntity } from "./example.entity";
 
 @Injectable()
@@ -18,7 +18,7 @@ export class ExampleService {
 	}
 
 	public update() {
-		return this.exampleRepository.save<ExampleEntity>({
+		return this.exampleRepository.save({
 			id: "472cbfbe-d7e4-487e-acd8-b045466a826c",
 			string: "bar",
 			list: ["fooBar"],
@@ -35,7 +35,7 @@ export class ExampleService {
 	}
 
 	public create() {
-		return this.exampleRepository.save<ExampleEntity>({
+		return this.exampleRepository.save({
 			id: "472cbfbe-d7e4-487e-acd8-b045466a826c", // Hardcoded for the example
 			string: "foo",
 			list: ["foo", "bar"],
@@ -46,7 +46,7 @@ export class ExampleService {
 	}
 
 	public complexUpdate() {
-		return this.exampleRepository.save<ExampleEntity>({
+		return this.exampleRepository.save({
 			id: "472cbfbe-d7e4-487e-acd8-b045466a826c",
 			list: Append("fooBar"),
 		});

@@ -3,7 +3,7 @@ import {
 	Entity,
 	PrimaryGeneratedColumn,
 	SubEntity,
-} from "@techmmunity/symbiosis";
+} from "@thothom/core";
 
 @SubEntity()
 export class SubExampleEntity {

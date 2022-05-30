@@ -1,14 +1,11 @@
 import { Module } from "@nestjs/common";
-import { SymbiosisModule } from "@techmmunity/symbiosis-nestjs";
-import {
-	Connection,
-	MongodbConnectionOptions,
-} from "@techmmunity/symbiosis-mongodb";
+import { ThothOMModule } from "@thothom/nestjs";
+import { Connection, MongodbConnectionOptions } from "@thothom/mongodb";
 import { ExampleModule } from "api/example/example.module";
 
 @Module({
 	imports: [
-		SymbiosisModule.forRoot<MongodbConnectionOptions>({
+		ThothOMModule.forRoot<MongodbConnectionOptions>({
 			class: Connection,
 			options: {
 				entitiesDir: ["src/api/**/*.entity.ts"],

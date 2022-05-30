@@ -1,16 +1,16 @@
 <div align="center">
 
-<img src="https://github.com/techmmunity/symbiosis/raw/master/resources/logo.gif" width="300" height="300" alt="">
+<img src="https://github.com/thothom/core/raw/master/resources/logo.gif" width="300" height="300" alt="">
 
-# Symbiosis NestJs Example
+# ThothOM NestJs Example
 
 [![Style Guide: Techmmunity](https://img.shields.io/badge/style%20guide-TECHMMUNITY-01d2ce?style=for-the-badge)](https://github.com/techmmunity/eslint-config)
 
 </div>
 
-Example project of `@techmmunity/symbiosis-nestjs`.
+Example project of `@thothom/nestjs`.
 
-See the docs at: [https://symbiosis.techmmunity.com.br/docs/integrations/nestjs](https://symbiosis.techmmunity.com.br/docs/integrations/nestjs)
+See the docs at: [https://thothom.com/docs/integrations/nestjs](https://thothom.com/docs/integrations/nestjs)
 
 ## How to test
 
